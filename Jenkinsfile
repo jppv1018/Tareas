@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Tarea #1') {
       steps {
-        sh 'IF EXIST C:\\TareaJenkins (EXIT) ELSE (MD "C:\\TareaJenkins")'
+        bat 'IF EXIST C:\\TareaJenkins (EXIT) ELSE (MD "C:\\TareaJenkins")'
       }
     }
 
